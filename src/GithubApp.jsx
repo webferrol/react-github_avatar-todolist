@@ -24,7 +24,7 @@ function GithubApp () {
           placeholder='webferrol'
           onChange={handleChange}
         />
-        <CustomButton>Cargar</CustomButton>
+        <CustomButton isLoading={loading}>Cargar</CustomButton>
       </fieldset>
       <div>
         {loading && <ImageSkeleton />}
